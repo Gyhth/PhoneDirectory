@@ -1,0 +1,301 @@
+/* CSS Reset Start */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS Reset Finished */
+
+body {
+	width: 960px;
+	margin: 0 auto;
+	background: #3B3B3B;
+	font-family: "sans-serif";
+}
+/* Header CSS Start */
+
+header h1 {
+	font-size: 45px;
+	font-weight: bold;
+	color: #FFFFFF;
+	display: block;
+	text-align: center;
+	margin: 0px 0px 10px 0px;
+	clear: both;
+	letter-spacing: -1px;
+}
+
+header {
+    margin: 10px 0px;
+	padding: 10px 0px;
+	overflow: auto;
+	background-image: linear-gradient(to top, #004A00, #335C33); 
+}
+
+/* Header CSS Finished */
+
+/* Navigation CSS Start */
+
+#mainNav li { 
+	float: left;
+	padding: 0px 5px 0px 0px; 
+	display: block;
+	margin: 0 0;
+}
+
+#mainNav li ul { 
+	display: none; 
+	position: absolute; 
+}
+
+#mainNav ul { 
+	padding: 0; 
+	margin: 0; 
+	list-style: none; 
+}
+
+#mainNav li:hover ul{
+	display: block; 
+	height: auto;
+	width: auto; 
+	background-image: linear-gradient(to top, #004A00, #6C976C);
+}
+#mainNav li ul li:hover {
+	background-image: linear-gradient(to top, #004A00, #6C976C);
+	width: 100%;
+}
+#mainNav li:after:hover {
+	background-color: transparent;
+}
+
+#mainNav li ul li{ 
+	clear: both;
+	border-style: none;
+	padding: 3px 0px 3px 10px;
+}
+
+#mainNav li ul li:after{ 
+	content: "";
+}
+
+#mainNav ul li:after {
+	padding-left: 5px;
+	padding-right: 5px;
+	content: "\\";
+	color: #8F8F8F;
+}
+
+#mainNav ul li:last-child:after {
+	content: "";
+}
+
+ul#navHeader {
+	float: right;
+}
+
+#mainNav
+ {
+	display: block;
+	width: 100%;
+}
+
+#mainNav ul li, #mainNav a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#mainNav a:hover {
+	text-decoration: underline;
+}
+
+
+/* Navigation CSS Finished */
+
+/* Content CSS Start */
+
+div.wrapper {
+	background: #5F5F5F;
+	padding: 0px 0px 20px 0px;
+}
+
+.roundBorder {
+	/* Safari 3-4, iOS 1-3.2, Android 1.6- */
+	-webkit-border-radius: 12px; 
+	/* Firefox 1-3.6 */
+	-moz-border-radius: 12px; 
+	/* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+	border-radius: 12px; 
+}
+
+div.container p.alertHeader {
+	background-image: linear-gradient(to top, #004A00, #6C976C);
+	font-weight: 20px;
+}
+
+div.content h1, div.container h1, div.content h1 {
+	font-size: 30px;
+	background-image: linear-gradient(to top, #004A00, #6C976C);
+	font-weight: bold;
+	color: #CFCFCF;
+	padding: 10px 0px 10px 20px;
+}
+
+p.alert {
+	padding: 5px 10px 5px 10px;
+	font-size: 17px;
+}
+div.container {
+	margin: 10px 0px;
+}
+p.contentParagraph {
+	padding: 5px 0px 5px 10px;
+	font-size: 17px;
+	color: #000000;
+}
+
+ul.login, .inputs {
+	text-align: center;
+	padding: 5px 0px 5px 0px;
+}
+
+ul.login li , .inputs{
+	padding: 5px 0px;
+}
+
+input[type=text], textarea, input[type=password], select {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+
+input, select {
+	width: 200px;
+}
+input[type=text]:focus, textarea:focus, input[type=password]:focus, select:focus {
+  box-shadow: 0 0 15px rgba(81, 203, 255, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 255, 1);
+}
+
+
+.css-errorList  {
+	padding: 0px 0px 20px 20px;
+	color: #8B0000;
+}
+
+
+.selectorLabel {
+	color: #CFCFCF;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.departmentListing {
+	padding: 0px 0px 10px 10px;
+}
+
+.departmentListing li a {
+	font-size: 20px;
+	color: #CFCFCF;
+}
+
+.inputs a {
+	text-decoration: none;
+}
+
+.deleteInform {
+	font-size: 20px;
+	color: #CFCFCF;
+}
+
+.errorNotice {
+	font-size: 25px;
+	color: #8B0000;
+	text-align: center;
+	padding: 15px 0px 15px 0px;
+}
+
+table.listEmployees {
+	border: 2px solid #CFCFCF;
+	margin: 5px 10px 30px 10px;
+}
+
+div>table.listEmployees:last-of-type {
+	margin: 5px 10px 0px 10px;
+} 
+
+table.listEmployees tbody tr th {
+    width: 290px;
+	font-weight: bold;
+	font-size: 18px;
+	color: #CFCFCF;
+}
+
+table td {
+	border: 2px solid #CFCFCF;
+	text-align: center;
+	font-size: 16px;
+	color: #FFFFFF;
+	padding: 5px 0px 5px 0px;
+}
+
+table td a {
+	color: #CFCFCF;
+	text-decoration: none;
+}
+
+table td a:hover {
+	text-decoration: underline;
+}
+
+/* Content CSS Finished */
+
